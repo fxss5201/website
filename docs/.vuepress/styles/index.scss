@@ -1,0 +1,62 @@
+// 添加额外的样式，或者覆盖默认样式
+// https://v2.vuepress.vuejs.org/zh/reference/default-theme/styles.html#style-%E6%96%87%E4%BB%B6
+
+:root {
+  // brand colors
+  --c-brand: #1890ff;
+  --c-brand-light: #40a9ff;
+  --c-tip: var(--c-brand);
+
+  --back-to-top-color: var(--c-brand);
+  --back-to-top-color-hover: var(--c-brand-light);
+}
+
+html.dark {
+  // brand colors
+  --c-brand: #1890ff;
+  --c-brand-light: #40a9ff;
+  --c-tip: var(--c-brand);
+
+  --back-to-top-color: var(--c-brand);
+  --back-to-top-color-hover: var(--c-brand-light);
+}
+
+.medium-zoom-overlay {
+  --medium-zoom-bg-color: rgba(0, 0, 0, 0.3);
+}
+
+.sidebar .navbar-items {
+  border-bottom: 0;
+}
+
+.sidebar-items {
+  border-top: 1px solid var(--c-border);
+}
+
+.display__flex {
+  display: flex;
+}
+
+.align-items__center {
+  align-items: center;
+}
+
+.justify-content__center {
+  justify-content: center;
+}
+
+.justify-content__space-between {
+  justify-content: space-between;
+}
+
+.p__10 {
+  padding: 10px;
+}
+
+.box-sizing__border-box {
+  box-sizing: border-box;
+}
+
+.text-bold {
+  font-weight: 600;
+}
