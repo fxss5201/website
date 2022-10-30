@@ -3,8 +3,6 @@ import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { getDirname, path } from '@vuepress/utils'
 import { seoPlugin } from 'vuepress-plugin-seo2'
 import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
-import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
-import { photoSwipePlugin } from 'vuepress-plugin-photo-swipe'
 
 const __dirname = getDirname(import.meta.url)
 
@@ -55,9 +53,5 @@ export default defineUserConfig({
     sitemapPlugin({
       hostname: 'https://www.fxss.work/'
     }),
-    mediumZoomPlugin({
-      selector: ''
-    }),
-    photoSwipePlugin({}),
   ],
 })
