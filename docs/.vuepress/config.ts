@@ -1,8 +1,8 @@
 import { defineUserConfig, defaultTheme } from 'vuepress'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import { getDirname, path } from '@vuepress/utils'
-import { seoPlugin } from "vuepress-plugin-seo2"
-import { sitemapPlugin } from "vuepress-plugin-sitemap2"
+import { seoPlugin } from 'vuepress-plugin-seo2'
+import { sitemapPlugin } from 'vuepress-plugin-sitemap2'
 
 const __dirname = getDirname(import.meta.url)
 
@@ -21,7 +21,8 @@ export default defineUserConfig({
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
       })();`
-    ]
+    ],
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1' }],
   ],
   theme: defaultTheme({
     logo: '/favicon.ico',
