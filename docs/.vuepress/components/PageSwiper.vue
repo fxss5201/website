@@ -5,7 +5,6 @@
       delay: 3000,
       disableOnInteraction: false
     }"
-    :loop="true"
     navigation
     :pagination="{ clickable: true }"
     class="page-swiper box-sizing__border-box"
